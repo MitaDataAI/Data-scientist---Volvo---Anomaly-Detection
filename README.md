@@ -12,7 +12,8 @@ Volvo’s motto, “For life,” reflects its strong commitment to quality and d
 
 However, it has limitations: it relies heavily on expert knowledge, struggles with real-world driving conditions, and cannot detect signal drift or new patterns (novelties) without manual reconfiguration. To address these challenges, Observer 3.0 is being developed using unsupervised artificial intelligence. This new version would offer autonomous, adaptive, and more scalable anomaly detection, while reducing human intervention and maintenance costs. The introduction raises two key hypotheses: that an AI model can improve detection by adapting to data changes, and that self-learning mechanisms can make the system more autonomous.
 
-
+# Demonstration
+Here is the presentation of how work really the anomaly detection in real-time : 
 ![image](https://github.com/user-attachments/assets/2971ae3a-a0e2-437e-96b1-cbf43b832d38)
 [![This video demonstrates real-time anomaly detection, with visible adaptation to data drift over time. You can also observe how the system adjusts to evolving patterns in the data stream.](https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/thumbnail.jpg)](https://vimeo.com/1074991688/e36268cd61)
 
