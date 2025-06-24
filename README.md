@@ -1,8 +1,7 @@
 # Internship at Volvo 
 
-# Volvo 
-Volvo is a world leader in car safety, sustainability, and innovation. It created the three-point seatbelt in 1959 and still leads in safety technology today. Volvo wants no one to be killed or seriously hurt in a new Volvo car. The company also cares about the environment. It plans to sell only electric cars by 2030 and be climate-neutral by 2040. Volvo Group, which makes trucks and buses, is a leader in heavy vehicles and is working on electric and self-driving transport. Volvo is known around the world for making safe, reliable, and responsible vehicles.
 ![image](https://github.com/user-attachments/assets/d148eed9-4f59-4b30-9b6e-4603456c6aca)
+Volvo is a world leader in car safety, sustainability, and innovation. It created the three-point seatbelt in 1959 and still leads in safety technology today. Volvo wants no one to be killed or seriously hurt in a new Volvo car. The company also cares about the environment. It plans to sell only electric cars by 2030 and be climate-neutral by 2040. Volvo Group, which makes trucks and buses, is a leader in heavy vehicles and is working on electric and self-driving transport. Volvo is known around the world for making safe, reliable, and responsible vehicles.
 
 
 # Goal of the project
