@@ -21,8 +21,8 @@ Here is the presentation of how work really the anomaly detection in real-time :
 ## 1 : Comparer l'existant qui tourne avec notre modernisation
 - L'existent dans notre projet est Observer 2.0 ;
 - Il fallait donc bien maitriser en amont le fonctionnement de ce modèle ;
-- Il faut aussi le tester avec des données réelles avec des scénario de drift ou de comportement différents pour comprendre ;
-  -- efrfrf
+- Il faut aussi le tester avec des données réelles avec des scénario différents en fonction du :
+  - prorata des anomalies dans les données, la présence de drift ou non, différentes types de drift, différents comportements déterministes en Tendance, Saisonnalité. 
 - Via ce processus de test qu'on peut voir les anomalies détectées ou ratées, la robustesse face aux différentes types de comportements, la robustesse face aux dérives ou drifts, l'utilisation de l'utilisation de beaucoup de pré-connaissance ou la capacité d'adaptation avec peu de données, 
 
 ## 1 : There are many way to define anomalies pour chaque type de données et ainsi que les données temporelles
