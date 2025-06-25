@@ -18,6 +18,16 @@ Here is the presentation of how work really the anomaly detection in real-time :
 [![This video demonstrates real-time anomaly detection, with visible adaptation to data drift over time. You can also observe how the system adjusts to evolving patterns in the data stream.](https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/thumbnail.jpg)](https://vimeo.com/1074991688/e36268cd61)
 
 # Great discovery
+## 1 : Comparer l'existant qui tourne avec notre modernisation
+- L'existent dans notre projet est Observer 2.0 ;
+- Il fallait donc bien maitriser en amont le fonctionnement de ce modèle ;
+- Il faut aussi le tester avec des données réelles avec des scénario de drift ou de comportement différents pour comprendre ;
+  -- efrfrf
+- Via ce processus de test qu'on peut voir les anomalies détectées ou ratées, la robustesse face aux différentes types de comportements, la robustesse face aux dérives ou drifts, l'utilisation de l'utilisation de beaucoup de pré-connaissance ou la capacité d'adaptation avec peu de données, 
+
+## 1 : There are many way to define anomalies pour chaque type de données et ainsi que les données temporelles
+- Pour les données temporelles
+
 ## 1 : A Technically Enriching Experience on End-to-End Model
 This project was a highly enriching experience from a technical standpoint. It provided an opportunity to understand the full workflow of real-time anomaly detection. We had the chance to cover all the essential steps: data extraction, preprocessing, exploratory analysis, modeling, evaluation, and considerations for production deployment.
 
