@@ -17,27 +17,62 @@ Here is the presentation of how work really the anomaly detection in real-time :
 ![image](https://github.com/user-attachments/assets/2971ae3a-a0e2-437e-96b1-cbf43b832d38)
 [![This video demonstrates real-time anomaly detection, with visible adaptation to data drift over time. You can also observe how the system adjusts to evolving patterns in the data stream.](https://raw.githubusercontent.com/yourusername/yourrepository/main/assets/thumbnail.jpg)](https://vimeo.com/1074991688/e36268cd61)
 
-# Great discovery
-## 1 : Comparer l'existant qui tourne avec notre modernisation
-- L'existent dans notre projet est Observer 2.0 ;
-- Il fallait donc bien maitriser en amont le fonctionnement de ce modèle ;
-- Il faut aussi le tester avec des données réelles avec des scénario différents en fonction du :
-  - prorata des anomalies dans les données, la présence de drift ou non, différentes types de drift, différents comportements déterministes en Tendance, Saisonnalité. 
-- Via ce processus de test qu'on peut voir les anomalies détectées ou ratées, la robustesse face aux différentes types de comportements, la robustesse face aux dérives ou drifts, l'utilisation de l'utilisation de beaucoup de pré-connaissance ou la capacité d'adaptation avec peu de données, 
 
-## 1 : There are many way to define anomalies pour chaque type de données et ainsi que les données temporelles
-- Pour les données temporelles
+# Great Discovery
+## 1. Improving the Existing Baseline
+Improving a baseline starts with a deep understanding of its strengths and limitations, in order to design effective solutions that address its shortcomings.
 
-## 1 : A Technically Enriching Experience on End-to-End Model
+- In our project, the current baseline is `Observer 2.0`.
+
+- To evaluate its performance, we tested the model using real-world data across a variety of scenarios, based on:
+  - the proportion of anomalies in the dataset;
+  - different types of anomalies:
+    - point anomalies;
+    - contextual anomalies;
+    - collective anomalies;
+    - correlational anomalies;
+  - the presence or absence of concept drift;
+  - different types of drift (sudden, gradual, recurring, etc.);
+  - deterministic patterns in the data, including:
+    - trend;
+    - seasonality.
+
+- This evaluation process helped assess the model's ability to:
+  - detect or miss various types of anomalies;
+  - distinguish anomalies in both low-density and high-density scenarios;
+  - remain robust in the presence of different time series behaviors;
+  - handle concept drift effectively;
+  - adapt with or without significant domain knowledge;
+  - process incoming data efficiently, relative to the event frequency.
+
+- From this analysis, several areas for improvement were identified:
+  - better drift handling;
+  - improved robustness to volatility;
+  - more effective detection of persistent anomalies, especially contextual ones;
+  - faster response and processing time.
+
+- Two models were selected for comparison:
+  - `I-Forest_ASD_ADWIN`:
+    - robust, but less precise;
+  - `OneShotSTL`:
+    - highly precise, but heavily reliant on seasonality.
+
+- The final choice was `OneShotSTL`, even though it is not a machine learning model.
+
+  It satisfied nearly all evaluation criteria, except for its dependency on an identifiable seasonal structure.
+
+  Surprisingly, it handled volatility and drift better than expected, thanks to its adaptive mechanism for decomposing trend and seasonality. As long as these components are present—even if they change—the model maintains strong performance.
+
+# 2 : A Technically Enriching Experience on End-to-End Model
 This project was a highly enriching experience from a technical standpoint. It provided an opportunity to understand the full workflow of real-time anomaly detection. We had the chance to cover all the essential steps: data extraction, preprocessing, exploratory analysis, modeling, evaluation, and considerations for production deployment.
 
-## 2 : Anticipating Real-Time Deployment Constraints
+## 3 : Anticipating Real-Time Deployment Constraints
 Although actual production deployment was not achieved, we discussed it multiple times. In anticipation of this step, much of OneShotSTL was developed in Java, which is significantly lighter than Python. Reflecting on this phase helped us identify necessary adjustments and deepened our understanding of the technical constraints inherent to real-time deployment.
 
-## 3 : Communication with Non-Data Experts
+## 4 : Communication with Non-Data Experts
 Another major strength of this experience was the communication with non-specialists in data. This is a crucial skill in an environment like Renault Trucks, where data scientists collaborate with business teams of various expertise. Transforming business needs into technical problems, adapting one’s communication, simplifying concepts, and making analyses accessible were key skills developed throughout the project. It helped me realize that a good data scientist is not just proficient in math and programming, but above all knows how to adapt to their audience to create value from data.
 
-## 4 : Methodological Challenges and Shifting Objectives
+## 5fa : Methodological Challenges and Shifting Objectives
 Despite the project’s many successes, contradictions in expectations posed challenges. Initially, the focus was on results based on supervised evaluation metrics, before shifting towards a fully unsupervised approach later on. This evolution required methodological adjustments. In the future, better anticipation of such requirements would allow for a more flexible approach from the start, using validation based on reconstruction error (MSE or MAE) or scores from time-series prediction models.
 
 ## 5 : Strategic Importance of Real-Time AI
